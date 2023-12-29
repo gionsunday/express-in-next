@@ -1,0 +1,807 @@
+/* Absolute imports */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Dancing+Script:wght@400;500;600&family=Darker+Grotesque:wght@300;400;600&family=Freehand&family=Indie+Flower&family=Lexend+Deca&family=Lobster&family=Lora&family=Nova+Mono&family=Oswald:wght@200;300&family=Overlock+SC&family=Oxygen+Mono&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reggae+One&family=Righteous&family=Roboto:wght@100;300;400;500;900&display=swap");
+
+
+/* Other relative imports */
+@import url("boilerplate.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("auth.css");
+@import url("scrolltop.css");
+@import url("owl-carousel.css");
+@import url("swiper.css");
+@import url("checkout.css");
+@import url("dashboard.css");
+@import url("payment.css");
+
+/* 
+============================
+Home page styles 
+============================
+*/
+
+
+
+
+/* 
+============================
+Section one styles 
+============================
+*/
+.section-one{
+position: relative;
+z-index:1020;
+/* height:500px; */
+/* display:flex; */
+
+}
+.section-one h3{
+color:var(--black-color);
+font-size:3.4rem;
+font-weight:400;
+}
+.section-one strong{
+font-weight:700;
+font-size:4.4rem;
+text-transform:uppercase;
+}
+.section-one>*{
+position: relative;
+z-index:1010;
+/* margin:auto; */
+
+}
+.section-one .flex-container{
+align-items:flex-end;
+}
+.section-one .flex-container>*{
+position: relative;
+z-index:1040;
+}
+.section-one .flex-container>*:last-child{
+position: relative;
+z-index:1010;
+}
+.section-one .flex-container>*:last-child::before{
+/* content:url(../images/section-one-speedmeter.svg); */
+content:"";
+display:inline-block;
+height:100%;
+width:70%;
+position:absolute;
+/* top:0; */
+right:0;
+bottom:60%;
+z-index:-1000;
+background:url("/section-one-speedmeter.svg") no-repeat top left/cover;
+transform:rotate(-45deg) skew(10deg);
+}
+
+/* .section-one::before{
+position: absolute;
+display:inline-block;
+width:40%;
+height:100%;
+z-index:1000;
+content:"";
+background:url("../images/section-one-speedmeter.svg") no-repeat center/cover;
+top:-100px;
+right:0;
+border:1px solid teal;
+transform:rotate(-30.84deg);
+} */
+
+.section-one .form-field{
+position: relative;
+}
+.section-one .form-field input{
+padding:1.2rem;
+}
+.section-one .form-field .search-icon{
+display: flex;
+cursor: pointer;
+position:absolute;
+right:0;
+top:0;
+height:100%;
+width:75px;
+background:#e21e35;
+border-radius:8px;
+text-align:center;
+vertical-align:middle;
+}
+.section-one .form-field .search-icon>*{
+margin:auto;
+}
+
+
+
+
+
+
+
+/* 
+============================
+deal of the day Styles
+============================
+*/
+.deal-of-the-day{
+position: relative;
+}
+.deal-of-the-day .flex-2{
+flex-flow:row nowrap;
+}
+.deal-of-the-day .flex-2>*{
+margin-bottom:0;
+}
+.deal-of-the-day .flex-2>*:first-child{
+position: relative;
+border-radius: 50px;
+background: rgba(162, 37, 35, 0.13);
+align-items:center;
+padding:1.2rem;
+}
+.deal-of-the-day .flex-2>*:first-child h3,
+.deal-of-the-day .flex-2>*:first-child h2{
+margin-bottom:0.7rem;
+}
+
+.deal-of-the-day .flex-2>*:first-child h2{
+color:var(--black-color)
+}
+.deal-of-the-day .flex-2>*:first-child .car-name{
+font-weight:600;
+}
+.deal-of-the-day .flex-2>*:first-child .cta-btn{
+width:50%;
+text-align:center;
+margin:1rem 0;
+}
+.deal-of-the-day  .price{
+font-size:1.2rem;
+font-weight:600;
+}
+.deal-of-the-day .original{
+color:var(--red);
+}
+
+/* .deal-of-the-day .flex-2>*:first-child::after{
+content:url(../images/section-two-car.svg);
+display:inline-block;
+height:100%;
+width:30%;
+position: absolute;
+top:25%;
+right:0;
+border-radius:0 15px 15px 0;
+z-index:1020;
+} */
+
+/* .deal-of-the-day .flex-2>:first-child>:first-child{
+flex-basis:66%;
+padding:1rem 2rem;
+text-align:center;
+} */
+
+
+
+.deal-of-the-day .flex-2 .item-details h3{
+font-size:1.2rem;
+font-weight:400;
+}
+.deal-of-the-day .flex-2 .item-details h3 strong:first-child{
+font-weight:600;
+font-size:2rem;
+}
+.deal-of-the-day .flex-2 .item-details h3 strong:nth-child(n+2){
+text-transform:uppercase;
+font-weight:700;
+font-size:3.4rem;
+}
+
+
+
+
+/* 
+============================
+Market place styles
+============================
+*/
+.market-place .flex-3>*{
+border-radius:8px;
+position: relative;
+}
+
+.market-place .flex-container>*{
+margin-bottom:1em;
+}
+.market-place .item-container .item-header .img-container{
+height:100%;
+}
+.market-place .item-container .item-body,
+.market-place .item-container .item-footer
+{
+padding:0.5rem 1rem;
+}
+.market-place .item-container .item-footer{
+}
+
+.market-place .item-container .label{
+font-size:0.8rem;
+font-weight:300;
+text-align:center;
+display:inline-block;
+background-color:#FF0000;
+color:var(--white-color);
+width:60px;
+height:20px;
+border-radius:25px;
+line-height:20px;
+}
+.market-place .item-container .item-header .img-container img{
+height:100%;
+}
+.market-place .item-footer .place-left p{
+font-weight:800;
+font-size:1.3rem;
+}
+
+.market-place .item-container h2,
+.market-place .item-container h4{
+font-weight:800;
+text-transform:uppercase;
+margin-bottom:0.5em;
+font-size:1.2rem;
+}
+.market-place .item-container h2{
+font-size:1rem;
+}
+.market-place .item-container h4{
+font-weight:700;
+color:var(--black-color);
+}
+
+.market-place .flex-3 .item-container{
+/* border:1px solid green; */
+height:100%;
+}
+.market-place .item-container .item-header img{
+border-radius:8px;
+}
+.market-place .flex-3>*{
+/* border:1px solid blue; */
+background: rgba(217, 217, 217, 0.28);
+margin-bottom:2em;
+}
+.market-place .flex-3 .inner-flex .img-container{
+width:20px;
+height:20px;
+}
+.market-place .flex-3 .inner-flex .img-container img{
+height:100%;
+}
+.market-place .flex-3 .inner-flex{
+/* border:1px solid blue; */
+display:flex;
+flex-flow:row wrap;
+gap:4%;
+align-items:center;
+justify-content:space-between;
+margin-bottom:0.8em;
+}
+/* .market-place .flex-3 .inner-flex:last-child{
+margin-bottom:0;
+}  */
+
+.market-place .flex-3 .item-footer .inner-flex>*:last-child{
+flex-basis:100%;
+}
+.market-place .see-more{
+text-align:center;
+display:flex;
+align-items:center;
+gap:4%;
+}
+.market-place .see-more a{
+font-weight:600;
+border:1px solid var(--red);
+border-radius:14px;
+}
+.market-place .see-more::before,
+.market-place .see-more::after{
+content:"";
+display:inline-block;
+width:25%;
+background:var(--red);
+height:0.2em;
+margin:0 auto;
+}
+
+
+
+
+
+
+/* 
+============================
+fact of the day  Styles
+============================
+*/
+.fact-of-the-day{
+position: relative;
+}
+.fact-of-the-day::after{
+content:url(/facts-aside-speedmeter.svg);
+display:inline-block;
+height:100%;
+width:100%;
+position:absolute;
+top:-200px;
+left:0;
+text-align:right;
+padding-right:50px;
+}
+/* change the wrapping nature of fact-of-the-day flex-2 */
+.fact-of-the-day .flex-2{
+flex-flow:row nowrap;
+align-items:flex-start;
+}
+.fact-of-the-day .flex-2>*:first-child{
+border-radius:15px;
+background:var(--red);
+flex-basis:66%;
+position:relative;
+/* padding:1rem; */
+position: relative;
+display:flex;
+flex-flow:row wrap;
+gap:4%;
+align-items:center;
+}
+
+.fact-of-the-day .flex-2>*:first-child::after{
+content:url("/cartoon-car-icon.svg");
+display:inline-block;
+height:100%;
+width:30%;
+position: absolute;
+bottom:0;
+right:0;
+background:url("/facts-aside-rectangle.svg") no-repeat;
+border-radius:0 15px 15px 0;
+z-index:1020;
+}
+.fact-of-the-day .flex-2>:first-child>:first-child{
+flex-basis:66%;
+padding:0rem 2rem 0rem;
+text-align:center;
+}
+.fact-of-the-day .flex-2>:first-child{
+/* display:flex;
+flex-flow:row wrap;
+gap:4%;
+align-items:center;
+position: relative; */
+}
+
+
+
+.fact-of-the-day p,
+.fact-of-the-day h3{
+color:var(--white-color)
+}
+
+.fact-of-the-day .flex-2 .item-details h3{
+font-size:1.4rem;
+font-weight:400;
+}
+.fact-of-the-day .flex-2 .item-details h3 strong:first-child{
+font-weight:600;
+font-size:2.4rem;
+}
+.fact-of-the-day .flex-2 .item-details h3 strong:nth-child(n+2){
+text-transform:uppercase;
+font-weight:700;
+font-size:3.4rem;
+}
+
+
+
+
+/* 
+============================
+Testimonials
+============================
+*
+/* for the grid-12 styles */
+
+.testimonials .carousel-item{
+/* border:1px solid #0000ff; */
+}
+.testimonials .carousel-item .img-container{
+width:150px;
+height:150px;
+border-radius:50%;
+margin:0 auto;
+}
+.testimonials .carousel-item .img-container img{
+height:100%;
+}
+/* Desktop design */
+
+
+/* styling the carousel image  */
+.testimonials .place-holder-text{
+position: relative;
+/* width:50%; */
+margin:2rem auto;
+text-align:center;
+padding:1rem;
+}
+.testimonials .place-holder-text h5{
+text-align:center;
+}
+.testimonials .place-holder-text::before,
+.testimonials .place-holder-text::after{
+content:"";
+display:inline-block;
+height:20px;
+width:40px;
+position: absolute;
+border-color:var(--black-color);
+border-style:solid;
+}
+.testimonials .place-holder-text::before{
+top:0;
+left:0;
+border-width:2px 0px 0px 2px;
+}
+.testimonials .place-holder-text::after{
+right:0;
+bottom:0;
+border-width:0px 2px 2px 0px;
+}
+
+
+
+
+
+
+/* 
+============================
+About Us Styles
+============================
+*/
+.about-us{
+position: relative;
+}
+.about-us>*{
+/* border:2px solid green; */
+}
+.about-us::after{
+content:url("/aboutus-aside-speedmeter.svg");
+display:inline-block;
+height:100%;
+width:100%;
+position:absolute;
+top:-150px;
+left:0;
+text-align:left;
+}
+.aboutus-container{
+position: relative;
+}
+.aboutus-container>*:first-child{
+position: relative;
+z-index:1000;
+background:#FF0000;
+padding:1.2rem;
+border-radius:18px;
+}
+
+.aboutus-container>*:first-child h3,
+.aboutus-container>*:first-child h4,
+.aboutus-container>*:first-child p{
+color:#FFFFFF;
+}
+.aboutus-container>*:first-child h3{
+text-align:center;
+}
+.aboutus-container>*:last-child{
+position: relative;
+z-index:1010;
+margin-top:-50px;
+}
+
+.about-us .rectangular-box p{
+/* border:1px solid orange; */
+}
+
+
+
+/* 
+============================
+Why choose us styles 
+============================
+*/
+.why-choose-us>*{
+margin-bottom:4em;
+}
+.why-choose-us .flex-2{
+display:flex;
+align-items:center;
+gap:4%;
+}
+
+.why-choose-us .flex-2 .img-container{
+flex-basis:65px;
+height:65px;
+/* margin:0 auto; */
+background: rgba(186, 10, 31, 0.11);
+border-radius:65px;
+padding:12px;
+}
+.why-choose-us .flex-2 .img-container img{
+height:100%;
+}
+.why-choose-us .flex-2  p{
+font-weight:600;
+font-size:20px;
+line-height:1.5;
+}
+.why-choose-us .flex-2  span{
+font-weight:600;
+font-size:1rem;
+color: #968D8D;
+}
+.steps-to-own-car ul{
+padding-left:1.8rem;
+}
+.steps-to-own-car ul li{
+/* border:1px solid blue; */
+padding:1rem;
+font-weight:400;
+text-transform:capitalize;
+position: relative;
+}
+.steps-to-own-car ul li::before{
+content:url("/check-icon.svg");
+position:absolute;
+display:inline-block;
+top:20%;
+right:100%;
+}
+.steps-to-own-car ul li+li::after{
+content:"...";
+display:inline-block;
+position:absolute;
+transform:rotate(90deg);
+left:-15px;
+top:-25px;
+font-size:2rem;
+color:#FF0000;
+line-height:1.5;
+}
+/* .steps-to-own-car ul li::marker{
+content:url("");
+} */
+
+
+/* 
+============================
+Our Partners styles 
+============================
+*/
+.our-partners .flex-container{
+display:flex;
+flex-flow:row nowrap;
+align-items:center;
+gap:4%;
+transform:translate(150%);
+transition:0.5s ease-in;
+animation:slide 25s ease infinite;
+
+}
+@keyframes slide {
+ 0%{
+ transform:translate(100%);
+ } 
+ 100%{
+ transform:translate(-150%);
+ } 
+}
+.our-partners .flex-container>*{
+flex-basis:auto;
+margin-bottom:0;
+}
+.our-partners .flex-container .img-container{
+height:75px;
+width:75px;
+}
+.our-partners .flex-container .img-container img{
+height:100%;
+}
+
+
+
+/*upsated css */
+section.searched-cars-section{
+margin-bottom:0;
+margin-top:-8em;
+}
+
+
+/* 
+============================
+Large screen size
+============================
+============================
+*/
+@media(min-width:980px){
+/* .deal-of-the-day .flex-container{
+position: relative;
+} */
+
+@media(max-width:980px){
+    #paypal-icon{
+        width:60px;
+        display: block;
+        margin-left: 0px;
+    }
+}
+.deal-of-the-day .flex-2>*:first-child{
+/* flex-basis:100%; */
+border-radius:100px;
+padding:2rem;
+}
+.deal-of-the-day .flex-2>*:last-child{
+/* display:none; */
+}
+.deal-of-the-day .flex-2>*:first-child{
+/* position: relative;
+height:340px;
+border-radius: 50px;
+background: rgba(162, 37, 35, 0.13);
+align-items:center;
+padding:1.2rem; */
+flex-basis:66%;
+display:flex;
+flex-flow:row wrap;
+gap:4%;
+align-items:center;
+}
+
+.deal-of-the-day .flex-2>*:first-child::after{
+/* content:url(../images/section-two-car.svg);
+display:inline-block;
+height:100%;
+width:30%;
+position: absolute;
+top:25%;
+right:0;
+border-radius:0 15px 15px 0;
+z-index:1020;
+border:1px solid red; */
+}
+
+.deal-of-the-day .flex-2>:first-child>:first-child{
+flex-basis:66%;
+padding:1rem 2rem;
+/* text-align:center; */
+}
+
+/* .fact-of-the-day .flex-2>*:first-child{
+border-radius:80px;
+} */
+
+
+
+.aboutus-container>*:first-child{
+position:absolute;
+width:75%;
+z-index:1000;
+margin:0 auto;
+transform:translate(-50%,-80%);
+top:50%;
+left:50%;
+padding:1rem 1rem 4rem;
+}
+.aboutus-container>*:last-child{
+margin-top:0px;
+}
+
+
+
+.fact-of-the-day .flex-2>*:first-child{
+height:340px;
+}
+
+
+.market-place .flex-3{
+display:flex;
+flex-flow:row wrap;
+gap:2%;
+}
+.market-place .flex-3>*{
+flex-basis:32%;
+}
+.market-place .item-container .label{
+display:block;
+}
+.market-place .flex-3 .flex-item{
+/* height:400px; */
+}
+.market-place .item-container .item-header{
+/* height:90px; */
+}
+.market-place .item-container h2,
+.market-place .item-container h4{
+/* font-size:100%; */
+}
+.market-place .item-container h4{
+/* font-size:90%; */
+}
+.market-place .flex-3 .item-footer .inner-flex>*:last-child{
+flex-basis:auto;
+}
+
+
+.testimonials .carousel{
+/* display:flex;
+flex-flow:row nowrap;
+align-items:center;
+gap:0%;
+*/
+/* position: relative; */
+}
+.testimonials .carousel .carousel-item{
+width:140px !important;
+border-radius:50%; 
+position:relative;
+z-index:998;
+color:var(--white-color);
+}
+.testimonials .carousel-item .img-container{
+ /* width:auto;
+ height:auto; */
+}
+.testimonials .carousel .fourth-item{
+ width:200px !important;
+z-index:1080 !important;
+}
+.testimonials .carousel .sixth-item,
+.testimonials .carousel .second-item{
+width:160px !important;
+}
+
+.testimonials .carousel .fifth-item,
+.testimonials .carousel .third-item{
+width:180px !important;
+
+}
+.testimonials .carousel .first-item{
+left:45px !important;
+
+}
+.testimonials .carousel .second-item{
+left:30px !important;
+}
+.testimonials .carousel .third-item{
+left:15px !important;
+}
+.testimonials .carousel .fourth-item{
+left:15px !important;
+}
+.testimonials .carousel .fifth-item{
+left:25px !important;
+}
+.testimonials .carousel .sixth-item{
+left:30px !important;
+}
+
+}
+
+
+
+
+

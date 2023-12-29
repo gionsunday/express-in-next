@@ -1,0 +1,159 @@
+
+
+/* ===============================================
+ Checkout page styles
+====================================================*/
+.checkout-page .vehicle-details h5,
+.checkout-page h1,
+.checkout-page h3,
+.checkout-page h4
+{
+color:var(--black-color);
+}
+.checkout-page .flex-2.view-vehicle-details{
+align-items:flex-start;
+}
+.checkout-page .place-left .viewed-vehicle{
+border-radius:8px;
+margin-bottom:10px;
+}
+.checkout-page .place-left .viewed-vehicle img{
+height:100%;
+display:block;
+border-radius:inherit;
+}
+.checkout-page .vehicle-details table{
+width:100%;
+border-radius:8px;
+border:1px solid #d9d9d9;
+}
+.checkout-page .vehicle-details td,
+.checkout-page .vehicle-details th{
+padding:0.7rem;
+border-bottom:1px solid #d9d9d9;
+text-align:left;
+vertical-align:bottom;
+}
+.checkout-page .vehicle-details tr:last-child td,
+.checkout-page .vehicle-details tr:last-child th
+{
+border-bottom:none;
+}
+.checkout-page .vehicle-details th{
+font-weight:500;
+font-size:1rem;
+}
+.checkout-page .purchase-details .flex-2{
+margin-bottom:0;
+justify-content:flex-end;
+}
+.checkout-page .purchase-details .flex-2>*{
+/* border:1px solid blue; */
+}
+
+/* Add to cart section */
+ .header-container .nav-menu .add-to-cart{
+  font-size:0.65rem;
+  color: var(--red);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  }
+ .header-container .nav-menu .add-to-cart img{
+   flex-basis:35px;
+   height:25px;
+   display:inline;
+}
+
+/* 
+======================================
+ add to cart styles 
+======================================
+*/
+.nav-menu .cart-wrapper{
+position: relative;
+}
+.nav-menu .add-to-cart .cart-counter{
+display:inline-block;
+height:18px;
+width:18px;
+border-radius:50%;
+position:absolute;
+top:-10px;
+right:90%;
+background:var(--dark-red);
+color:var(--white-color);
+font-weight:600;
+font-size:1rem;
+text-align:center;
+display:none;
+}
+.nav-menu .add-to-cart .cart-counter.active{
+display:block;
+}
+.checkout-page .make-payment .flex-2{
+align-items:center;
+margin-top:2em;
+justify-content:center;
+gap:1%;
+}
+.checkout-page .make-payment .flex-2>*{
+text-align:center;
+}
+.checkout-page .make-payment .flex-2 .img-container{
+width:35px;
+height:35px;
+cursor: pointer;
+}
+.checkout-page .make-payment .flex-2 .img-container img{
+height:100%;
+}
+
+
+/* for the display car cards */
+.checkout-page .vehicle-views{
+display:flex;
+align-items:flex-start;
+flex-flow:row wrap;
+gap:2%;
+}
+.checkout-page .vehicle-views .view-item{
+height:50px;
+flex-basis:50px;
+margin-bottom:0.5rem;
+cursor: pointer;
+box-shadow:var(--box-shadow-1);
+}
+.checkout-page .vehicle-views .view-item img{
+border-radius:8px;
+height:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+===============================================
+for large Desktop Screen
+==============================================
+ */
+
+@media(min-width:980px){
+.checkout-page .make-payment .flex-2{
+/* justify-content:flex-end; */
+align-items:flex-end;
+gap:0;
+
+}
+
+.checkout-page .make-payment .flex-2>*:last-child{
+flex-basis:120px;
+}
+}

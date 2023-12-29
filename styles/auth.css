@@ -1,0 +1,85 @@
+
+
+/* 
+==========================================================
+The styles below is applied to both signup and signin
+
+===========================================================
+ */
+ /* auth-container styles here */
+ .auth-container.main-container{
+position: relative;
+/* border:1px solid red; */
+}
+.auth-container.main-container>*{
+position: relative;
+z-index:2000;
+}
+.auth-container::before,
+.auth-container::after{
+position: absolute;
+display:inline-block;
+width:35%;
+height:100%;
+z-index:1040;
+content:"";
+}
+.auth-container::before{
+background:url("/right-speedmeter.svg") no-repeat;
+top:0;
+right:0;
+}
+.auth-container::after{
+background:url("/left-speedmeter.svg") no-repeat bottom left;
+position: absolute;
+bottom:-20%;
+left:0;
+}
+
+ .auth-container .form-field .button{
+display:flex;
+flex-flow:row wrap;
+align-items:center;
+justify-content:space-around;
+padding:0.5rem;
+ }
+
+ .auth-container .form-field .button>*{
+ flex-basis:22%;
+ }
+ .auth-container .form-field .button >*:first-child{
+ height:56px;
+ /* width:76px; */
+ }
+ .auth-container .form-field .button >*:first-child img{
+/* border:1px solid green; */
+height:100%;
+ } 
+ .auth-container .form-field .button >*:last-child{
+ color:var(--white-color);
+ text-transform:capitalize;
+ font-size:1rem;
+ }
+
+
+
+
+
+
+ /* ==============================
+ media Queries
+ ====================================*/
+ @media(min-width:980px){
+ .auth-container .flex-container{
+  align-items:flex-end;
+ }
+ .auth-container .form-container .flex-input{
+ display:flex;
+ flex-flow:row wrap;
+ align-items:center;
+ gap:4%;
+ }
+ .auth-container .form-container .flex-input>*{
+ flex-basis:48%;
+ }
+ }

@@ -1,0 +1,67 @@
+
+/* 
+=========================
+Footer Styles goes here
+========================
+ */
+ .footer-container{
+ background: #000000;
+ height:240px;
+ position: relative;
+ /* border:2px solid yellow; */
+ z-index:1010;
+ }
+ .footer-container>*{
+position: relative;
+z-index:1040;
+ }
+footer::before,
+footer::after{
+position: absolute;
+display:inline-block;
+width:35%;
+height:100%;
+z-index:1020;
+content:"";
+}
+footer::before{
+background:url("/footer-car-bg-2.svg") no-repeat top right;
+top:0;
+right:0;
+/* border:1px solid blue; */
+}
+footer::after{
+background:url("/footer-car-bg-1.svg") no-repeat top left;
+bottom:0;
+left:0;
+/* border:1px solid blue; */
+}
+.footer-container .flex-container{
+height:100%;
+}
+.footer-container .flex-container>*{
+/* width:100px; */
+}
+.footer-container .flex-container{
+display:flex;
+flex-flow: row wrap;
+align-items:center;
+justify-content:center;
+}  
+
+.footer-container .flex-container>*{
+/* margin:auto; */
+flex-basis:48%;
+}
+
+
+
+
+/* ==========================
+Large Desktop Screen
+==============================*/
+@media(min-width:980px){
+.footer-container .flex-container>*{
+flex-basis:22%;
+}
+}

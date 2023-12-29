@@ -1,0 +1,36 @@
+.scroll-top {
+  position: fixed;
+  bottom: 7.5rem;
+  right: 1rem;
+  z-index: 3800;
+  font-size: 2rem;
+  background: var(--red);
+  /* background: rgba(0, 255, 0, 0.1); */
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--white-color);
+  display: none;
+  height:40px;
+  width:40px;
+  text-align:center;
+}
+
+/* added styles */
+.scroll-top::before{
+content:"<";
+display:inline-block;
+font-size:1.4rem;
+font-weight:600;
+color:var(--white-color);
+position: absolute;
+top:0;
+transform: rotate(90deg);
+/* margin:auto; */
+line-height:40px;
+}
+
+.scroll-top:hover {
+  background: var(--black-color);
+  color: #fff;
+}

@@ -1,0 +1,112 @@
+/* ===========================
+ Payment page styles
+================================*/
+.payment-page label{
+display:inline-block;
+}
+.payment-page input{
+width:auto;
+}
+.payment-page .select-payment-method p{
+margin-bottom:1em;
+}
+.payment-page .selected-network{
+position: relative;
+}
+.payment-page .copy-icon{
+width:25px;
+height: 25px;
+position:absolute;
+top:25%;
+right:0;
+cursor: pointer;
+}
+.payment-page .copy-icon::before{
+content:"copied";
+display:inline-block;
+background:#d9d9d9;
+border-radius:8px;
+position:absolute;
+top:-20px;
+right:20px;
+padding:0.2rem 12px;
+opacity:0;
+transition:0.5s ease;
+}
+.payment-page .copy-icon.active::before{
+opacity:1;
+}
+.payment-page .copy-icon.in-active::before{
+opacity: 0;
+}
+.payment-page .selected-network .wallet-address{
+padding:0.75rem 2.5rem 0.75rem 0.75rem;
+word-break:break-all;
+}
+
+.payment-page .select-field{
+position: relative;
+/* border:1px solid  blue; */
+}
+.payment-page .select-field::before{
+content:">";
+display:inline-block;
+position: absolute;
+bottom:calc(0.5rem + 5px);
+right:15px;
+transform:rotate(90deg);
+font-size:1rem;
+font-weight:600;
+}
+.payment-page .select-field select{
+-webkit-appearance:none;
+-moz-appearance:none;
+appearance:none;
+display:block;
+width:100%;
+outline:none;
+box-shadow:none;
+-webkit-padding:1rem;
+padding:1rem;
+border-radius:8px;
+}
+
+
+
+/* card payment section */
+.payment-page label{
+display:inline-block;
+font-weight:600;
+
+}
+.payment-page .card-pay-form-container input{
+width:100%;
+
+}
+
+
+
+
+
+
+
+
+/* 
+======================================
+For Desktop
+========================================
+*/
+@media(min-width:980px){
+.payment-page .card-pay-form-container .double-field{
+display:flex;
+flex-flow:row wrap;
+align-items:center;
+gap:4%;
+}
+.payment-page .card-pay-form-container .double-field .form-field{
+flex-basis:48%;
+}
+.payment-page .cta-btn{
+width:120px;
+}
+}

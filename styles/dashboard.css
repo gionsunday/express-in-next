@@ -1,0 +1,152 @@
+
+
+/* 
+=======================================
+This styles are for the user dashboard 
+===========
+============================
+*/
+
+.user-dashboard  .grid-4>*{
+margin-bottom:4rem;
+}
+.user-dashboard  .grid-4>*:last-child{
+margin-bottom:0;
+}
+
+/* user profile section */
+.user-dashboard h2,
+.user-dashboard .user-profile h4{
+ text-align:center; 
+}
+.user-dashboard .user-profile{
+text-align:center;
+}
+.user-dashboard .user-profile .img-container{
+height:150px;
+width:150px;
+border-radius:50px;
+margin:auto;
+position: relative;
+}
+.user-dashboard .user-profile .img-container::before{
+content:url('/active-icon.svg');
+display:inline-block;
+position:absolute;
+top:100px;
+right:-5px;
+}
+
+
+
+/* center menu */
+.user-dashboard .center-menu .box{
+border-radius: 5px;
+background: rgba(186, 10, 31, 0.06);
+display:flex;
+padding:1rem;
+flex-flow:row wrap;
+gap:4%;
+align-items:center;
+margin-bottom:2rem;
+}
+.user-dashboard .center-menu .box h5{
+margin-bottom:0;
+}
+.user-dashboard .center-menu .box>*{
+/* border:1px solid blue; */
+}
+.user-dashboard .center-menu .cta-btn{
+text-align:center;
+}
+
+
+
+
+
+/* dashborad history */
+.user-dashboard .purchase-history{
+background: rgba(255, 244, 244, 0.48);
+padding:1rem;
+}
+.user-dashboard .purchase-history li{
+margin-bottom:1rem;
+border-bottom:1px solid rgba(186, 10, 31, 0.33);
+padding:1rem;
+position: relative;
+}
+.user-dashboard .purchase-history li::after{
+content:". . .";
+position:absolute;
+font-size:1.2rem;
+bottom:0;
+right:0;
+transform:rotate(90deg);
+font-weight:700;
+color:var(--red);
+}
+
+/* speed images */
+.dashboard-page{
+position: relative;
+z-index:2000;
+}
+.dashboard-page::before,
+.dashboard-page::after{
+position: absolute;
+display:inline-block;
+width:35%;
+height:35%;
+z-index:-1;
+content:"";
+}
+.dashboard-page::before{
+background:url("/right-speedmeter.svg") no-repeat;
+top:0;
+right:0;
+/* border:1px solid blue; */
+}
+.dashboard-page::after{
+background:url("/left-speedmeter.svg") no-repeat;
+position: absolute;
+bottom:0;
+left:0;
+}
+
+
+
+
+
+
+
+
+@media(min-width:980px){
+.user-dashboard .market-place .flex-3>*{
+flex-basis:49%;
+}
+.user-dashboard .center-menu .flex-2>*{
+margin-bottom:0;
+}
+.user-dashboard  .grid-4{
+display:grid;
+grid-template-columns:20% 60% 22%;
+gap:2%;
+}
+.user-dashboard  .grid-4>*:first-child{
+overflow-y:scroll;
+}
+.user-dashboard  .grid-4>*:first-child::-webkit-scrollbar{
+background:#d9d9d9;
+border-radius:14px;
+width:8px;
+}
+.user-dashboard  .grid-4>*:first-child::-webkit-scrollbar-thumb{
+width:5px;
+}
+.user-dashboard .user-profile{
+height:100%;
+}
+.user-dashboard  .grid-4>*{
+margin-bottom:0;
+}
+}
